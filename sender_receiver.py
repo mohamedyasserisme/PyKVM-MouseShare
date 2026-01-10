@@ -75,7 +75,7 @@ def sender_mode():
         on_scroll=on_scroll
     ).start()
 
-    # 🔑 Keyboard logic
+    # 🔑 Keyboard logic (FIXED)
     def on_key_press(key):
         global ctrl_pressed, alt_pressed, send_enabled, last_x, last_y
 
@@ -154,9 +154,9 @@ def receiver_mode():
 
 # ================= MAIN =================
 if __name__ == "__main__":
-    print("\n--- PyKVM Mouse Share ---")
-    print("1. Sender (Laptop)")
-    print("2. Receiver (PC)")
+    print("\n--- Mouse Share (Python KVM – FINAL) ---")
+    print("1. Sender (Laptop with mouse)")
+    print("2. Receiver (PC to control)")
 
     choice = input("Choose (1 or 2): ")
 
